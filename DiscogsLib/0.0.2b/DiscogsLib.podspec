@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.1'
   s.osx.deployment_target = '10.7'
 
-  s.source_files = 'DiscogsLib/DiscogsLib/*.{h,m}'
+  s.source_files = 'DiscogsLib/DiscogsLib/**/*.{h,m}'
 
   s.frameworks = 'SystemConfiguration', 'MobileCoreServices'
 
