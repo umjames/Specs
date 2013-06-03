@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency 'AFOAuth1Client', '0.1.0'
+  s.dependency 'AFOAuth1Client', '0.2.0'
 end
