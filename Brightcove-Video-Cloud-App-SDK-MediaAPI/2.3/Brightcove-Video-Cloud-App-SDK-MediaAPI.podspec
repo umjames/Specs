@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'http://support.brightcove.com/en/video-cloud/docs/video-cloud-app-sdk-ios'
   s.author = 'Brightcove Inc.'
 
+  s.source_files = 'bc-media-api-2/lib/usr/local/include/*.h'
   s.source = { :http => 'http://files.brightcove.com/bc-media-api-2-3.zip' }
   s.preserve_paths = 'bc-media-api-2/lib/libBrightcoveMediaAPI.a'
   s.source_files = 'bc-media-api-2/lib/usr/local/include/*.h'
