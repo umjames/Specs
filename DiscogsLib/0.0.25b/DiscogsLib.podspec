@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency 'AFOAuth1Client', '0.2.1'
+  s.dependency 'AFOAuth1Client', '0.2.2'
+
   s.prefix_header_contents = <<-EOS
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>

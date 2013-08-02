@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
     #import <Foundation/Foundation.h>
 
     #import <Availability.h>
+    #import "SongKickLibMacros.h"
     #if __IPHONE_OS_VERSION_MIN_REQUIRED
         #import <SystemConfiguration/SystemConfiguration.h>
         #import <MobileCoreServices/MobileCoreServices.h>
