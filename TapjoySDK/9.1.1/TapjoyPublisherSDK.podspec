@@ -2,9 +2,9 @@ Pod::Spec.new do |s|
   s.name = 'TapjoySDK'
   s.version = '9.1.1'
   s.license = { :type => 'Commercial', :text => <<-LICENSE
-
+    
     https://dashboard.tapjoy.com/sdk/license
-
+    
     Copyright © 2013 Tapjoy, Inc. All Rights Reserved
     TAPJOY SDK DOWNLOAD LICENSE AGREEMENT
 
@@ -44,8 +44,15 @@ Pod::Spec.new do |s|
   s.author = { 'Tapjoy' => 'support@tapjoy.com' }
   s.source = { :http => 'https://s3.amazonaws.com/tapjoy/sdks/TapjoySDK_iOS_v9.1.1.zip' }
   s.platform = :ios
+<<<<<<< HEAD
   s.resource  = "TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/Resources/TapjoyResources.bundle"
   s.source_files = 'TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/Headers/*.h'
   s.framework    = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'CoreTelephony', 'MediaPlayer'
   s.weak_frameworks = 'AdSupport'
+=======
+  s.resource  = "TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/Resources/TapjoyResources.bundle"  
+  s.source_files = 'TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/Headers/*.h'
+  s.framework    = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'CoreTelephony', 'MediaPlayer'
+  s.weak_frameworks = 'AdSupport'  
+>>>>>>> 0a92bf4... Added new TapjoySDK (9.1.1) pod.
 end
