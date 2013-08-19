@@ -43,16 +43,13 @@ Pod::Spec.new do |s|
   s.homepage = 'http://www.tapjoy.com/'
   s.author = { 'Tapjoy' => 'support@tapjoy.com' }
   s.source = { :http => 'https://s3.amazonaws.com/tapjoy/sdks/TapjoySDK_iOS_v9.1.1.zip' }
-  s.platform = :ios
-<<<<<<< HEAD
-  s.resource  = "TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/Resources/TapjoyResources.bundle"
-  s.source_files = 'TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/Headers/*.h'
-  s.framework    = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'CoreTelephony', 'MediaPlayer'
-  s.weak_frameworks = 'AdSupport'
-=======
-  s.resource  = "TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/Resources/TapjoyResources.bundle"  
-  s.source_files = 'TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/Headers/*.h'
+  s.platform = :ios  
+  
+  s.resource  = "TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle"  
+
+  s.source_files = 'TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/Versions/A/Headers/*.h'
+  s.preserve_paths = 'TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework/*'
   s.framework    = 'Foundation', 'UIKit', 'CoreGraphics', 'SystemConfiguration', 'CoreTelephony', 'MediaPlayer'
   s.weak_frameworks = 'AdSupport'  
->>>>>>> 0a92bf4... Added new TapjoySDK (9.1.1) pod.
+  s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/TapjoySDK_iOS_v9.1.1/Libraries/Tapjoy.framework"'}
 end
