@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   framework_path = 'OpenX_Mobile_SDK_iOS/SDK/OpenXMSDK.framework'
   
   s.source_files = "#{framework_path}/Versions/A/Headers/*.{h}"
-  s.resources = "#{framework_path}/Versions/A/Resources/*.{png,js,html,plist}"
+  s.resources = "#{framework_path}/Versions/A/Resources/*.{png,html,js}"
   
   s.preserve_paths = "#{framework_path}"
   s.header_dir = 'OpenXMSDK'
